@@ -1,0 +1,16 @@
+{
+  "name": "buildcss",
+  "version": "1.0.0",
+  "description": "build all site css",
+  "main": "index.js",
+  "scripts": {
+    "test": "node-sass --output-style -w ../ja_site/t4_dev/plugins/system/t4/admin/assets/scss/admin.scss -o ../ja_site/t4_dev/plugins/system/t4/admin/assets/css/",
+    "cssadmin": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 ../ja_site/t4_dev/plugins/system/t4/admin/assets/scss/admin.scss  ../ja_site/t4_dev/plugins/system/t4/admin/assets/css/admin.css",
+    "csstemp": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 ../ja_site/t4_dev/templates/t4_blank/local/scss/template.scss  ../ja_site/t4_dev/templates/t4_blank/local/css/template.css"
+  },
+  "author": "kiendt",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
